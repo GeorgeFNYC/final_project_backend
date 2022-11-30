@@ -7,7 +7,7 @@ class AuthController < ApplicationController
         @user = User.find_by!(username: login_params[:username])
         if @user.authenticate(login_params[:password])
             @token = encode_token(user_id: @user.id)
-            render json: { user: User.Serializer.new(@user), token: @token }, status: 202
+            render json: { user: UserSerializer.new(@user), token: @token }, status: 202
         else
             render json: { error: "Incorrect password" }, status: 401
         end
