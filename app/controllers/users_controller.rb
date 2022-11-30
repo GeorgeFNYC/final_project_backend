@@ -9,7 +9,7 @@ class UsersController < ApplicationController
         render json: { user: UserSerializer.new(user), token: @token }, status: 201
     end
 
-    def me
+    def profile
         render json: current_user, status: 200
     end
 
