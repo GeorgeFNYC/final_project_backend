@@ -1,4 +1,5 @@
 class AuthController < ApplicationController
+    wrap_parameters format: []
 
     skip_before_action :authorized, only: [:login]
     rescue_from ActiveRecord::RecordNotFound, with: :render_error
