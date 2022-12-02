@@ -10,7 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_29_203721) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_02_170803) do
+  create_table "biceps", force: :cascade do |t|
+    t.string "biceps_clip"
+    t.string "biceps_workout"
+    t.string "biceps_step_one"
+    t.string "biceps_step_two"
+    t.string "biceps_step_three"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "forearms", force: :cascade do |t|
+    t.string "forearms_clip"
+    t.string "forearms_workout"
+    t.string "forearms_step_one"
+    t.string "forearms_step_two"
+    t.string "forearms_step_three"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "triceps", force: :cascade do |t|
+    t.string "triceps_clip"
+    t.string "triceps_workout"
+    t.string "triceps_step_one"
+    t.string "triceps_step_two"
+    t.string "triceps_step_three"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
