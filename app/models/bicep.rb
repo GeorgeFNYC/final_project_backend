@@ -1,0 +1,2 @@
+class Bicep < ApplicationRecord
+end
