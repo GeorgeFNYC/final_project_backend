@@ -10,7 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_29_203721) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_06_190238) do
+  create_table "bodyparts", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "muscles", force: :cascade do |t|
+    t.string "name"
+    t.integer "bodypart_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "work_muscles", force: :cascade do |t|
+    t.integer "workout_id"
+    t.integer "muscle_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "workouts", force: :cascade do |t|
+    t.string "name"
+    t.string "video_clip"
+    t.text "workout_description"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"

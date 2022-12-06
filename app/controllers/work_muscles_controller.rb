@@ -1,0 +1,2 @@
+class WorkMusclesController < ApplicationController
+end
