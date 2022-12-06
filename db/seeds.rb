@@ -99,3 +99,7 @@ WorkMuscle.create(workout_id: 18, muscle_id: 7)
 
 WorkMuscle.create(workout_id: 19, muscle_id: 8)
 WorkMuscle.create(workout_id: 20, muscle_id: 8)
+
+puts 'Seeding Test Users'
+User.create(first_name:'George', last_name:'Fernandez', username:'georgef21', password:'1039497')
+
