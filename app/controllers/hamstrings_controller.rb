@@ -1,0 +1,2 @@
+class HamstringsController < ApplicationController
+end

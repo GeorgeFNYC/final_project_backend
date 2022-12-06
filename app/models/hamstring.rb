@@ -1,0 +1,2 @@
+class Hamstring < ApplicationRecord
+end

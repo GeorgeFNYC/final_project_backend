@@ -1,0 +1,2 @@
+class CalvesController < ApplicationController
+end

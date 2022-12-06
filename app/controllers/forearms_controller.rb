@@ -1,0 +1,2 @@
+class ForearmsController < ApplicationController
+end

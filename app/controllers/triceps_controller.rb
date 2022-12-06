@@ -1,0 +1,2 @@
+class TricepsController < ApplicationController
+end

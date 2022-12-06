@@ -1,0 +1,2 @@
+class BicepsController < ApplicationController
+end
