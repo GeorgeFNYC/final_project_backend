@@ -33,7 +33,7 @@ Workout.create(id: 2, name: "Dumbbell Hammer Curl", video_clip: "https://musclew
 puts 'Done with Biceps'
 
 Workout.create(id: 3, name: "Dumbbell Skullcrusher", video_clip: "https://musclewiki.com/media/uploads/videos/branded/male-dumbbell-skullcrusher-front_XhMR7N7.mp4", workout_description: "Lay flat on the floor or a bench with your fists extended to the ceiling and a neutral grip. Break at the elbows until your fists are by your temples. Then extend your elbows and flex your tricep at the top.")
-Workout.create(id: 4, name: "Seated Overhead Tricep Extension", video_clip: "https://musclewiki.com/media/uploads/videos/branded/male-dumbbell-overhead-tricep-extension-front.mp4'", workout_description: "Seated Overhead Tricep Extension', tricep_step_one: 'Sit on the bench and hold a dumbbell with both hands. Raise the dumbbell overhead at arms length, holding the weight up with the palms of your hands. Keep your elbows in while you lower the weight behind your head, your upper arms stationary. Raise the weight back to starting position.")
+Workout.create(id: 4, name: "Seated Overhead Tricep Extension", video_clip: "https://musclewiki.com/media/uploads/videos/branded/male-dumbbell-overhead-tricep-extension-front.mp4", workout_description: "Seated Overhead Tricep Extension', tricep_step_one: 'Sit on the bench and hold a dumbbell with both hands. Raise the dumbbell overhead at arms length, holding the weight up with the palms of your hands. Keep your elbows in while you lower the weight behind your head, your upper arms stationary. Raise the weight back to starting position.")
 
 puts 'Done with Triceps'
 
